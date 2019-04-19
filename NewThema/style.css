@@ -1,0 +1,109 @@
+/*
+Thema Name: Nieuw thema van Bjorn Emmaneel.
+Author: Bjorn Emmaneel.
+Author URL: .
+Version 1.0
+*/
+
+/* Generale css */
+body {
+    font-family: sans-serif;
+    color: #333;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+a {
+    color: silver;
+}
+
+/*Opmaak Header*/
+header {
+    background: silver;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    min-height: 25vw;
+}
+
+header a {
+    color: #fff;
+}
+
+/* Opmaak Footer */
+footer {
+    background: silver;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* Menu opmaak */
+nav {
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+nav .menu a {
+    text-decoration: none;
+    display: block;
+    background-color: black;
+    padding: .5em 1em;
+    border-bottom: 1px solid #eee;
+}
+
+nav .menu a:hover {
+    background-color: grey;
+}
+
+nav .menu .current-menu-item a {
+    background-color: grey;
+    border-right: .3em solid red;
+}
+
+@media screen and (min-width: 800px) {
+    nav ul.menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    }
+
+    nav ul.menu a{
+        border-right: 1px solid #eee;
+    }
+
+    nav #menu-extramenu {
+        font-size: 1em;
+    }
+}
+
+/* Classes */
+.container {
+    padding: 0 2em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+.bericht {
+    border-bottom: 6px double black;
+}
+
+.bericht:last-of-type {
+    border-bottom: 0;
+}
+
