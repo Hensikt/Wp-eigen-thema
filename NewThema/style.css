@@ -7,7 +7,7 @@ Version 1.0
 
 /* Generale css */
 body {
-    font-family: sans-serif;
+    font-family: 'PT Serif', serif;
     color: #333;
     margin: 0;
     min-height: 100vh;
@@ -28,6 +28,17 @@ header {
     min-height: 25vw;
 }
 
+header p, h1, h2, h3, h4{
+    font-family: 'Poller One', cursive;
+}
+
+header>.container>a{
+    text-decoration: none;
+}
+header>.container>a:hover{
+    text-decoration: underline;
+    color: #0eb5d6;
+}
 header a {
     color: #fff;
 }
