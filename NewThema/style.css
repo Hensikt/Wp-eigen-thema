@@ -15,8 +15,34 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+body > .container {
+    border-right: 1px solid royalblue;
+}
+
 a {
     color: silver;
+}
+
+/*opmaak van main*/
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 5em;
+}
+
+aside {
+    border-right: 1px solid royalblue;
+    margin-right: -2em;
+}
+
+
+aside h4 {
+    color: royalblue;
+}
+
+.screen-reader-text {
+    display: none;
 }
 
 /*Opmaak Header*/
@@ -28,17 +54,25 @@ header {
     min-height: 25vw;
 }
 
-header p, h1, h2, h3, h4{
+header p, h1, h2, h3, h4 {
     font-family: 'Poller One', cursive;
 }
 
-header>.container>a{
+header .container {
+    border-right: 1px solid #eee;
+    min-height: 25vw;
+    margin-bottom: -2em;
+}
+
+header > .container > a {
     text-decoration: none;
 }
-header>.container>a:hover{
+
+header > .container > a:hover {
     text-decoration: underline;
     color: #0eb5d6;
 }
+
 header a {
     color: #fff;
 }
@@ -60,6 +94,7 @@ nav {
 }
 
 nav ul.menu {
+    border: 1px solid #eee;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -72,6 +107,10 @@ nav .menu a {
     background-color: black;
     padding: .5em 1em;
     border-bottom: 1px solid #eee;
+}
+
+nav ul.menu a {
+    border-right: 1px solid #eee;
 }
 
 nav .menu a:hover {
@@ -89,7 +128,7 @@ nav .menu .current-menu-item a {
         grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
     }
 
-    nav ul.menu a{
+    nav ul.menu a {
         border-right: 1px solid #eee;
     }
 
@@ -118,3 +157,34 @@ nav .menu .current-menu-item a {
     border-bottom: 0;
 }
 
+.postmetaData {
+    font-size: .8em;
+    color: #aaa;
+}
+
+.postmetaData a {
+    color: #aaa;
+}
+
+.postmetaData a:hover {
+    color: royalblue;
+}
+
+.postmetaData ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.postmetaData li{
+    display: inline;
+}
+
+.postmetaData li:after{
+    content: ' | ';
+}
+
+.zoek-term-in-kop{
+    color: royalblue;
+}

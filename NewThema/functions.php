@@ -2,8 +2,9 @@
 
 function NewThema_source() {
 
+  wp_enqueue_script('script', get_theme_file_uri('/js/script.js'), NULL, '1.0', true);
   wp_enqueue_style('style', get_stylesheet_uri());
-  wp_enqueue_style('mijn Googlefonts', '//fonts.googleapis.com/css?family=PT+Serif|Poller+One&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+  wp_enqueue_style('mijnGooglefonts', '//fonts.googleapis.com/css?family=PT+Serif|Poller+One&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 }
 
 add_action('wp_enqueue_scripts', 'NewThema_source');
